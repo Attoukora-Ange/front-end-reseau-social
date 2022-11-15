@@ -1,0 +1,101 @@
+.vue{
+    border: 1px solid #1c2e4c;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 90%;
+    margin: 1rem auto;
+    position: relative;
+}
+.vue .vue_fermer{
+    position: absolute;
+    top: 1rem;
+    right: .5rem;
+}
+.vue .vue_fermer{
+   font-size: 1.5rem;
+   cursor: pointer;
+   transition: color .3s ease-in-out;
+}
+.vue .vue_fermer:hover{
+  color: #970d1a;
+}
+.vue .vue_envoyer{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 1rem;
+   margin: 0 auto;
+}
+.vue .vue_envoyer{
+  cursor: pointer;
+  font-size: 4rem;
+  color: #1c2e4c;
+  transition: color .3s ease-in-out;
+}
+.vue .vue_envoyer:hover{
+  color: #9cebb3;
+}
+.vue .vue_contenue{
+    width: 100%;
+}
+.vue .vue_contenue_texte .texte_input,
+.input_contenue_texte .texte_input{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.vue .vue_contenue_texte {
+    max-height: 300px;
+    overflow-y: scroll;
+    border-radius: 1rem;
+}
+.input_contenue_texte .texte_input textarea{
+   margin-top: 1rem;
+    height: 50px;
+    font-size : 1.5rem;
+}
+.vue .vue_contenue_texte .texte_input,
+.input_contenue_texte .texte_input textarea {
+    width: 100%;
+    resize: none;
+    outline: none;
+    border-radius: 1rem;
+    padding : .5em 1rem;
+}
+.vue .vue_contenue_texte .texte_input{
+    font-size: 1.9rem;
+    background-color: #bdc8db36;
+    white-space: pre-wrap;
+}
+.input_contenue_image{
+    display: none;
+}
+.vue .vu_contenue_image{
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    
+}
+.vue .vu_contenue_image .image_vue{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.vue .vu_contenue_image .image_vue img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.vue .vu_contenue_video{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 1rem; 
+}
+.vue .vu_contenue_video > div{
+   border-radius: 1rem; 
+   overflow: hidden;
+}

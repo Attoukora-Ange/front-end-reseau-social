@@ -1,0 +1,33 @@
+.haut{
+    position: relative;
+}
+.haut::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 80%;
+    height: .1rem;
+    transform: translate(-50%, -50%);
+    background-color: #1c2e4c;
+}
+.haut .haut_principal{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.haut .haut_principal .haut_image svg{
+font-size: 3rem;
+cursor: pointer;
+transition: color .3s ease-in-out;
+}
+
+.haut .haut_principal .haut_image.texte svg:hover{
+color: #576182;
+}
+.haut .haut_principal .haut_image.photo svg:hover{
+color: #1c2e4c;
+}
+.haut .haut_principal .haut_image.video svg:hover{
+color: #1c2e4c;
+}

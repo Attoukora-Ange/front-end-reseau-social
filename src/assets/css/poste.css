@@ -1,0 +1,257 @@
+.poste {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  padding: 1rem;
+  margin: 1rem auto;
+  border: 1px solid #1c2e4c;
+  border-radius: 1rem;
+}
+.poste .post_utilisateur .post_contenue_principale {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+}
+.poste .post_utilisateur .post_contenue_principale .post_fermer svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.poste .post_utilisateur .post_contenue_principale .post_fermer svg:hover {
+  color: #970d1a;
+}
+.poste .post_utilisateur {
+  width: 100%;
+}
+.poste .post_utilisateur .post_contenue {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.poste .post_utilisateur .post_contenue .post_photo_utilisateur {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.poste .post_utilisateur .post_contenue .post_photo_utilisateur img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.poste .post_utilisateur .post_contenue .post_pseudo_utilisateur {
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.poste .post_utilisateur .post_contenue_date {
+  margin-bottom: 1rem;
+}
+.poste .post_utilisateur .post_contenue_date .post_date {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.poste .post_utilisateur .post_contenue_poster .poster {
+  width: 98%;
+  margin: 0 auto;
+}
+.poste .post_utilisateur .post_contenue_poster .poster .texte {
+  font-size: 1.4rem;
+  text-align: justify;
+  white-space: pre-wrap;
+}
+.poste .post_contenue_image {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.poste.post_contenue_image .image_post {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.poste .post_contenue_image .image_post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.poste .poste_contenue_video {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.poste .poste_contenue_video > div {
+  overflow: hidden;
+}
+.poste .bas_poste {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+.poste .bas_poste .like_unlike,
+.poste .bas_poste .commentaire,
+.poste .bas_poste .partager {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.poste .bas_poste .like_unlike .like_icone svg,
+.poste .bas_poste .commentaire .commentaire_icone svg,
+.poste .bas_poste .partager .partager_icone svg {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.poste .bas_poste .like_unlike .nombre_like,
+.poste .bas_poste .commentaire .nombre_commentaire {
+  font-size: 1.5rem;
+}
+.poste .post_utilisateur .grand_contenue_commentaire {
+  border: 1px solid #1c2e4c;
+  border-radius: 1rem;
+  margin: 1rem auto;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.poste
+  .post_utilisateur
+  .commentaire_utilisateur
+  .vu_commentaire
+  .vu_commentaire_utilisateur_ferme {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+.poste
+  .post_utilisateur
+  .commentaire_utilisateur
+  .vu_commentaire
+  .vu_commentaire_photo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.poste
+  .post_utilisateur
+  .commentaire_utilisateur
+  .vu_commentaire
+  .vu_commentaire_utilisateur_ferme
+  .vu_commentaire_ferme
+  svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+.poste
+  .post_utilisateur
+  .commentaire_utilisateur
+  .vu_commentaire
+  .vu_commentaire_utilisateur_ferme
+  .vu_commentaire_ferme
+  svg:hover {
+  color: #970d1a;
+}
+
+.poste
+  .post_utilisateur
+  .commentaire_utilisateur
+  .vu_commentaire
+  .vu_commentaire_photo
+  .vu_commentaire_pseudo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.poste
+  .post_utilisateur
+  .commentaire_utilisateur
+  .vu_commentaire
+  .vu_commentaire_photo
+  .image_post {
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.poste
+  .post_utilisateur
+  .commentaire_utilisateur
+  .vu_commentaire
+  .vu_commentaire_photo
+  .image_post
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.poste
+  .post_utilisateur
+  .commentaire_utilisateur
+  .vu_commentaire
+  .vu_commentaire_texte {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    background: #d7dbfa;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-left: 3.5rem;
+    overflow-x: hidden;
+    width: 90%;
+    word-break: break-all;
+}
+.poste .commentaire_input {
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+  /* gap: 1rem; */
+  /* background-color: #1c2e4c; */
+  border: 1px solid #1c2e4c;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.poste .commentaire_input .champs_commentaire {
+  width: 100%;
+}
+.poste .commentaire_input .champs_commentaire textarea {
+  outline: none;
+  font-size: 1.6rem;
+  resize: none;
+  width: 100%;
+  height: 70px;
+  padding: 1rem;
+  border: none;
+}
+.poste .texte span {
+  /* background-color: #1c2e4c; */
+  font-size: 1.3rem;
+  color: #587dbe;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+.poste .texte span:hover {
+  font-size: 1.3rem;
+  color: #010610;
+}
+.poste .commentaire_input .commentaire_envoye svg {
+  font-size: 4rem;
+  color: #1c2e4c;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+.poste .commentaire_input .commentaire_envoye svg:hover {
+  color: #9cebb3;
+}
+.like_icone svg {
+  color: #970d1a;
+}

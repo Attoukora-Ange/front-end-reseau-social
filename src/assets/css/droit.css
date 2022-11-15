@@ -1,0 +1,168 @@
+.droit {
+    /* background-color: #fff; */
+    padding: 1rem;
+    /* border-radius: 1rem; */
+    /* max-height: 50vh; */
+    position: sticky;
+    top: 2%;
+}
+.droit .droit_principal_ligne{
+    padding: 1rem;
+    max-height: 150px;
+    overflow-y: scroll; 
+    background-color: #fff; 
+    border-radius: 1rem;
+}
+.droit .liste_amis_texte{
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    position: relative;
+    color: #1c2e4c;
+    font-weight: 700;
+}
+.droit .liste_amis_texte::after{
+    content: '';
+    position: absolute;
+    top: 115%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: .1rem;
+    background-color: #2a2b2a;
+}
+.droit .droit_principal_ligne .amis_en_ligne{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.droit .droit_principal_ligne .amis_en_ligne .image{
+   width: 2.5rem;
+   height: 2.5rem;
+   overflow: hidden;
+   border-radius: 50%;
+   position: relative; 
+}
+.droit .droit_principal_ligne .amis_en_ligne .image::after{
+   content: '';
+   position: absolute;
+   top: 10%;
+   right: 5%;
+   width: .7rem;
+   height: .7rem;
+   transform: translate(-25%, -20%);
+   border-radius: 50%;
+   background-color: #1e54b1;
+}
+.droit .droit_principal_ligne .amis_en_ligne .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.droit .droit_principal_ligne .amis_en_ligne .pseudo{
+    font-size: 1.5rem;
+    color: #1c2e4c;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.droit .suggestion_haut{
+    padding: 1rem .5rem;
+    background-color: #fff; 
+    /* padding: 1rem;  */
+    max-height: 300px;
+    overflow-y: scroll;
+    border-radius: 1rem;
+    /* margin: 1rem; */
+}
+.droit .suggestion{
+    padding: 1rem;
+    /* max-height: 150px; */
+    /* overflow-y: scroll;  */
+    background-color: #f2f2f2; 
+    border-radius: 1rem;
+    margin-bottom: .5rem;
+}
+.droit .suggestion_amis_texte{
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    position: relative;
+    color: #1c2e4c;
+    font-weight: 700;
+    margin-top: 2.5rem;
+}
+.droit .suggestion_amis_texte::after{
+    content: '';
+    position: absolute;
+    top: 116%;
+    left: 50%;
+    width: 70%;
+    transform: translateX(-50%);
+    height: .1rem;
+    background-color: #2a2b2a;
+}
+.droit .suggestion .suggestion_amis{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    /* margin-bottom: 1.5rem; */
+}
+.droit .suggestion .suggestion_amis .image{
+   width: 2.5rem;
+   height: 2.5rem;
+   overflow: hidden;
+   border-radius: 50%;
+   position: relative;
+}
+
+.droit .suggestion .suggestion_amis .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.droit .suggestion .suggestion_amis .pseudo_utilisateur .pseudo{
+    font-size: 1.5rem;
+    color: #1c2e4c;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.droit .suggestion .suggestion_amis .pseudo_utilisateur{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1rem;
+   width: 100%;
+}
+.droit .suggestion .suggestion_amis .pseudo_utilisateur .pseudo_icone{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1rem;
+}
+.droit .suggestion .suggestion_amis .pseudo_utilisateur .pseudo_icone svg{
+   font-size: 2rem;
+   cursor: pointer;
+   opacity: .8;
+   transition: all .3s ease-in-out;
+}
+.droit .suggestion .suggestion_amis .pseudo_utilisateur .pseudo_icone svg:hover{
+   opacity: 1;
+}
+.droit .suggestion .suggestion_amis .pseudo_utilisateur .pseudo_icone .refuser{
+   color: #801155;
+}
+.droit .suggestion .suggestion_amis .pseudo_utilisateur .pseudo_icone .refuser:hover{
+   color: #ed0f98;
+}
+.droit .suggestion .suggestion_amis .pseudo_utilisateur .pseudo_icone .accepter{
+   color: #9cebb3;
+   border-radius: 50%;
+   font-size: 1.8rem;
+}
+.droit .suggestion .suggestion_amis .pseudo_utilisateur .pseudo_icone .accepter:hover{
+   color: #34f36a;
+}

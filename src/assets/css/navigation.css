@@ -1,0 +1,163 @@
+.navigation{
+    padding: 1.5rem 5%;
+    background-color: #172049;
+    /* height: 80px; */
+}
+.navigation .navigation_principale{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.navigation .navigation_principale .logo_texte{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.navigation .navigation_principale .logo_texte .logo{
+    width: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.navigation .navigation_principale .logo_texte .logo img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.navigation .navigation_principale .logo_texte .texte{
+   font-size: 1.5rem;
+   color: #9cebb3;
+   font-weight: 500;
+   cursor: pointer;
+}
+.navigation .navigation_principale .champs_recherche{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    background-color: #fff;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    position: relative;
+   
+}
+.navigation .navigation_principale .champs_recherche .cadre_recherche_principal{
+    position: absolute;
+    margin-top: 1rem;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: center; */
+    /* gap: 1rem; */
+    background-color: #0b1d70f4;
+    border-radius: 1rem;
+    z-index: 1200;
+    overflow: hidden;
+    padding: .5rem 1rem;
+    max-height: 230px;
+    overflow-y: scroll;
+}
+.navigation .navigation_principale .champs_recherche .cadre_recherche_principal .cadre_recherche{
+    /* position: absolute;
+    margin-top: 1rem;
+    top: 100%;
+    left: 0;
+    width: 100%; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    /* padding: 1rem; */
+    margin: .2rem 0;
+    background-color: #fff;
+    border-radius: 1rem;
+    /* z-index: 1200; */
+}
+.navigation .navigation_principale .champs_recherche .cadre_recherche .image_utilisateur{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.navigation .navigation_principale .champs_recherche .cadre_recherche .image_utilisateur img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.navigation .navigation_principale .champs_recherche .cadre_recherche .pseudo_utilisateur_recherche{
+   color: #172049;
+   font-size: 1.4rem;
+   cursor: pointer;
+   text-transform: capitalize;
+   transition: color .3s ease-in-out;
+}
+.navigation .navigation_principale .champs_recherche .cadre_recherche .pseudo_utilisateur_recherche:hover{
+   color: #2a2b2a;
+
+}
+.navigation .navigation_principale .champs_recherche .champs_input{
+    width: 100%;
+}
+.navigation .navigation_principale .champs_recherche .champs_input input{
+    width: 100%;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+}
+.navigation .navigation_principale .champs_recherche .champs_icone svg{
+    width: 100%;
+    font-size: 1.5rem;
+    color: #2a2b2a;
+    outline: none;
+}
+.navigation .navigation_principale .champs_utilisateur{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.navigation .navigation_principale .champs_utilisateur .champs_image{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.navigation .navigation_principale .champs_utilisateur .champs_image img{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: #fff;
+    object-fit: cover;
+}
+.navigation .navigation_principale .champs_utilisateur .champs_icone .champs_icone_pseudo{
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: capitalize;
+}
+.navigation .navigation_principale .champs_utilisateur .champs_notification{
+  position: relative;
+}
+.navigation .navigation_principale .champs_utilisateur .champs_notification .nombre_notification{
+    position: absolute;
+    top: -25%;
+    right: -25%;
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.navigation .navigation_principale .champs_utilisateur .champs_notification svg{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+
+

@@ -1,0 +1,103 @@
+.amis{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 5px 2px #1c2e4c;
+    background-color: #fff;
+    z-index: 1000;
+}
+.amis .fermer_amis{
+   position: absolute;
+   top: .5rem;
+   right: .5rem;
+   font-size: 1.5rem;
+   cursor: pointer;
+   transition: color .3s ease-in-out;
+}
+.amis .fermer_amis:hover{
+   color: #970d1a;
+}
+.amis .amis_titre{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #1c2e4c;
+    color: #fff;
+    border-radius: 1rem;
+}
+.amis .amis_contenue_principale{
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+.amis .amis_contenue_principale .amis_contenue{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.amis .amis_contenue_principale .amis_contenue .amis_contenue_utilisateur{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.amis .amis_contenue_principale .amis_contenue .amis_contenue_utilisateur .amis_photo{
+   width: 3rem;
+   height: 3rem;
+   overflow: hidden;
+   border-radius: 50%;
+}
+.amis .amis_contenue_principale .amis_contenue .amis_contenue_utilisateur .amis_photo img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.amis .amis_contenue_principale .amis_contenue .amis_contenue_utilisateur .amis_pseudo{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    text-align: center;
+    cursor: pointer;
+}
+.amis .amis_contenue_principale .amis_contenue .amis_boutton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.amis .amis_contenue_principale .amis_contenue .amis_boutton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.amis .amis_contenue_principale .amis_contenue .amis_boutton button{
+    padding: .5rem 1rem;
+    outline: none;
+    border: .5px solid #1c2e4c;
+    background-color: #fff;
+    color: #1c2e4c;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.amis .amis_contenue_principale .amis_contenue .amis_boutton .retirer_amis:hover{
+    border: .5px solid #1c2e4c;
+    background-color: #801155;
+    color: #fff;
+}
+.amis .amis_contenue_principale .amis_contenue .amis_boutton .suivre_amis:hover{
+    border: .5px solid #1c2e4c;
+    background-color: #9cebb3;
+    color: #fff;
+}
+

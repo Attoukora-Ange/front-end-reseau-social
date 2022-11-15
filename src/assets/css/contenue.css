@@ -1,0 +1,7 @@
+.contenue{
+    padding: 1rem 7%;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    gap: 1rem;
+    background-color: #40307263;
+}

@@ -1,0 +1,105 @@
+.abonne{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 5px 2px #1c2e4c;
+    background-color: #fff;
+    z-index: 1000;
+    
+    
+}
+.abonne .fermer_abonne{
+    transition: all 10s ease-in-out;
+   position: absolute;
+   top: .5rem;
+   right: .5rem;
+   font-size: 1.5rem;
+   cursor: pointer;
+  
+}
+.abonne .fermer_abonne:hover{
+   color: #970d1a;
+}
+.abonne .abonne_titre{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #1c2e4c;
+    color: #fff;
+    border-radius: 1rem;
+}
+.abonne .abonne_contenue_principale{
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+.abonne .abonne_contenue_principale .abonne_contenue{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.abonne .abonne_contenue_principale .abonne_contenue .abonne_contenue_utilisateur{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.abonne .abonne_contenue_principale .abonne_contenue .abonne_contenue_utilisateur .abonne_photo{
+   width: 3rem;
+   height: 3rem;
+   overflow: hidden;
+   border-radius: 50%;
+}
+.abonne .abonne_contenue_principale .abonne_contenue .abonne_contenue_utilisateur .abonne_photo img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.abonne .abonne_contenue_principale .abonne_contenue .abonne_contenue_utilisateur .abonne_pseudo{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    text-align: center;
+    cursor: pointer;
+}
+.abonne .abonne_contenue_principale .abonne_contenue .abonne_boutton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.abonne .abonne_contenue_principale .abonne_contenue .abonne_boutton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.abonne .abonne_contenue_principale .abonne_contenue .abonne_boutton button{
+    padding: .5rem 1rem;
+    outline: none;
+    border: .5px solid #1c2e4c;
+    background-color: #fff;
+    color: #1c2e4c;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    /* text-transform: capitalize; */
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.abonne .abonne_contenue_principale .abonne_contenue .abonne_boutton .retirer_abonne:hover{
+    border: .5px solid #1c2e4c;
+    background-color: #801155;
+    color: #fff;
+}
+.abonne .abonne_contenue_principale .abonne_contenue .abonne_boutton .suivre_abonne:hover{
+    border: .5px solid #1c2e4c;
+    background-color: #9cebb3;
+    color: #fff;
+}

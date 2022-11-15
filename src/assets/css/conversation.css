@@ -1,0 +1,244 @@
+.conversation{
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    /* height: 80%; */
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 5px 2px #1c2e4c;
+    background-color: #fff;
+    z-index: 1000;
+}
+.conversation .fermer_conversation{
+   position: absolute;
+   top: .5rem;
+   right: .5rem;
+   font-size: 1.5rem;
+   cursor: pointer;
+   transition: color .3s ease-in-out;
+}
+.conversation .fermer_conversation:hover{
+   color: #970d1a;
+}
+.conversation .conversation_titre{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #1c2e4c;
+    color: #fff;
+    border-radius: 1rem;
+}
+/* .conversation .conversation_contenue_principale{
+    max-height: 80vh;
+    overflow-y: scroll;
+} */
+.conversation .conversation_contenue_principale .conversation_contenue{
+    display: grid;
+    grid-template-columns: 35% auto;
+    gap: 1rem;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_gauche{
+    width: 100%;
+    
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_gauche .champs_recherche{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 60%;
+    /* margin: 0 auto; */
+    border: 1px solid #1c2e4c;
+    /* background-color: #1c2e4c; */
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_gauche .champs_recherche .champs_input{
+    width: 100%;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_gauche .champs_recherche .champs_input input{
+    width: 100%;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_gauche .champs_recherche .champs_icone svg{
+    width: 100%;
+    font-size: 1.5rem;
+    color: #2a2b2a;
+    outline: none;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_gauche .champs_gauche .en_tete_champs_groupe{
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 600;
+    padding: 1rem;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_gauche .champs_gauche .champs_gauche_groupe {
+    width: 25%;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_gauche .champs_gauche .champs_gauche_groupe .champs_groupe_label{
+    font-size: 1.8rem;
+    /* color: #2a2b2a; */
+    text-transform: capitalize;
+    text-align: left;
+    margin-bottom: 1rem;
+    display: inline-block;
+    /* font-weight: 100; */
+    cursor: pointer;
+    padding: .5rem;
+    border-radius: 1rem;
+    /* transition:  .3s ease-in-out; */
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_gauche .champs_gauche .champs_gauche_groupe .champs_groupe_label:hover{
+    font-weight: 600;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_gauche .champs_gauche_utilisateur_principal .en_tete_champs_utilisateur{
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 600;
+    padding: 1rem;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_gauche .champs_gauche_utilisateur{
+    max-height: 40vh;
+    width: 100%;
+    overflow-y: scroll;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_gauche .champs_gauche_utilisateur .champs_gauche_utilisateur_cadre{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_gauche .champs_gauche_utilisateur .champs_gauche_utilisateur_cadre svg{
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_gauche .champs_gauche_utilisateur .champs_gauche_utilisateur_cadre svg:hover{
+    color: #970d1a;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_gauche .champs_gauche_utilisateur .champs_photo{
+    width: 3rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_gauche .champs_gauche_utilisateur .champs_photo img{
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_gauche .champs_gauche_utilisateur .champs_pseudo{
+   font-size: 1.5rem;
+   transition: color .3s ease-in-out;
+   cursor: pointer;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_gauche .champs_gauche_utilisateur .champs_pseudo:hover{
+   color: #141415;
+   font-weight: 600;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_droit .conversation_droit_champs_texte{
+ height: 60vh; 
+ border: 1px solid #1c2e4c;
+ border-radius: 1rem;
+ padding: 1rem;
+ overflow-y: scroll;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_droit .conversation_droit_champs_textearea{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+gap: 1rem;
+margin-top: 1rem;
+/* background-color: #141415; */
+border: 1px solid #1c2e4c;
+border-radius: 0 1rem 1rem 0;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_droit .conversation_droit_champs_textearea .message_textarea{
+    width: 100%;
+    height: 80px;
+
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_droit .conversation_droit_champs_textearea .message_textarea textarea{
+width: 100%;
+height: 100%;
+/* height: 80px; */
+padding: 1rem;
+outline: none;
+border: none;
+border-right: 1px solid #1c2e4c ;
+/* border: 1px solid #1c2e4c; */
+/* border-radius: 1rem; */
+resize: none;
+font-size: 1.5rem;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_droit .conversation_droit_champs_textearea .message_envoyer svg{
+color: #1c2e4c;
+font-size: 2.5rem;
+cursor: pointer;
+transition: color .3s ease-in-out;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_droit .conversation_droit_champs_textearea .message_envoyer svg:hover{
+color: #1f46aa;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_droit .conversation_droit_champs_texte .champs_utilisateur{
+    position: relative;
+    margin-top: 2.5rem;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_droit .conversation_droit_champs_texte .champs_utilisateur .champs_utilisateur_detail{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_droit .conversation_droit_champs_texte .champs_utilisateur .champs_utilisateur_detail .champs_photo{
+    width: 3rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_droit .conversation_droit_champs_texte .champs_utilisateur .champs_utilisateur_detail .champs_photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_droit .conversation_droit_champs_texte .champs_utilisateur .champs_utilisateur_detail .champs_message{
+   border-radius: 1rem;
+   background-color: #5d69be;
+   color: #fff;
+   font-size: 1.4rem;
+   padding: .5rem 1rem;
+   width: 90%;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_droit .conversation_droit_champs_texte .champs_utilisateur.moi .champs_utilisateur_detail .champs_message{
+   border-radius: 1rem;
+   background-color: #1c2e4c;
+   color: #fff;
+   font-size: 1.4rem;
+   padding: .5rem 1rem;
+   width: 90%;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_droit .conversation_droit_champs_texte .champs_utilisateur .champs_utilisateur_heure{
+   position: absolute;
+   bottom: -1.2rem;
+   right: 2rem;
+   font-size: 1rem;
+   color: #2a2b2a;
+}
+.conversation .conversation_contenue_principale .conversation_contenue .conversation_droit .conversation_droit_champs_texte .champs_utilisateur.moi .champs_utilisateur_heure{
+   position: absolute;
+   bottom: -1.2rem;
+   left: 1rem;
+   font-size: 1rem;
+   color: #2a2b2a;
+}
+.active_conversation{
+    background-color: #2a2b2a;
+    color: #fff;
+    /* width: 100%; */
+}

@@ -1,0 +1,134 @@
+.profil{
+    padding: 1rem;
+    border: 1px solid #1c2e4c;
+    height: 100%;
+    border-radius: 1rem;
+    position: relative;
+}
+.profil.modifier{
+    padding: 1rem;
+    /* border: 1px solid #1c2e4c; */
+    height: 120%;
+    border-radius: 1rem;
+}
+.profil.modifier .modifier{
+    cursor: pointer;
+}
+.profil .profil_principal .en_tete_profil{
+    font-size: 2rem;
+    color: #1c2e4c;
+    padding: .5rem 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+}
+.profil .profil_principal .profil_utilisateur .profil_utilisateur_photo{
+    position: relative;
+    height: 50vh;
+    padding: 1rem;
+}
+.profil .profil_principal .profil_utilisateur .profil_utilisateur_photo .image_couvrture{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5rem;
+}
+.profil .profil_principal .profil_utilisateur .profil_utilisateur_photo .image_couvrture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profil .profil_principal .profil_utilisateur .profil_utilisateur_photo .image_profil{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+    border-radius: 50%;
+    /* box-shadow: 1px 1px 2px 2px #1c2e4c; */
+    box-shadow: 0px 0px 5px 2px #fff;
+}
+.profil .profil_principal .profil_utilisateur .profil_utilisateur_photo .image_profil img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profil .profil_principal .profil_utilisateur_identification_principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+}
+.profil .profil_principal .profil_utilisateur_identification .pseudo_profil{
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 1rem;
+}
+.profil .profil_principal .profil_utilisateur_identification_principal .profil_utilisateur_identification .pseudo_profil .pseudo_profil_label,
+.profil .profil_principal .profil_utilisateur_identification_principal .profil_utilisateur_identification .pseudo_profil .pseudo_profil_nom,
+.profil .profil_principal .profil_utilisateur_identification_principal .profil_utilisateur_identification .pseudo_profil .pseudo_profil_age,
+.profil .profil_principal .profil_utilisateur_identification_principal .profil_utilisateur_identification .pseudo_profil .pseudo_profil_matrimonial{
+    font-size: 2rem;
+    padding: .2rem;
+    text-transform: capitalize;
+}
+.profil .profil_principal .profil_utilisateur_identification_principal .profil_utilisateur_identification .pseudo_profil .pseudo_profil_email{
+    font-size: 2rem;
+    padding: .2rem;
+    text-transform: lowercase;
+}
+.profil .profil_principal .profil_utilisateur_identification_principal .profil_utilisateur_identification .pseudo_profil .pseudo_profil_label{
+    font-weight: 600;
+}
+.profil .profil_principal .cadre_profil_detail{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    width: 95%;
+}
+.profil .profil_principal .cadre_profil_detail.boutton{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+    width: 95%;
+}
+.profil .profil_principal .cadre_profil_detail.boutton::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: -1rem;
+    background-color: #1c2e4c;
+}
+.profil .profil_principal .cadre_profil_detail .cadre_profil_detail_amis,
+.profil .profil_principal .cadre_profil_detail .cadre_profil_detail_abonne,
+.profil .profil_principal .cadre_profil_detail .cadre_profil_detail_suivie{
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    border: 1px solid #1c2e4c;
+    /* background-color: #801155; */
+    color: #1c2e4c;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.profil .profil_principal .cadre_profil_detail .cadre_profil_detail_amis:hover{
+    background-color: #4e204d;
+    color: #fff;
+}
+.profil .profil_principal .cadre_profil_detail .cadre_profil_detail_abonne:hover{
+    background-color: #5d69be;
+    color: #fff;
+}
+.profil .profil_principal .cadre_profil_detail .cadre_profil_detail_suivie:hover{
+    background-color: #576182;
+    color: #fff;
+}
