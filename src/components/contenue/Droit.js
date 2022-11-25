@@ -8,7 +8,7 @@ const Droit = () => {
   const { state } = useContext(BASE_CONTEXTE);
   return (
     <div className="droit">
-      <div className="liste_amis_texte">Amis en ligne (1)</div>
+      <div className="liste_amis_texte">Amis en ligne (0)</div>
       <div className="droit_principal_ligne">
         <EnLigne />
       </div>

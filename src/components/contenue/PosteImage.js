@@ -4,7 +4,7 @@ const PosteImage = ({post}) => {
   return (
     <div className="post_contenue_image">
       <div className="image_post">
-        <img src={`/assets/images/post/${post.postPhoto}`} alt="poste" />
+        <img src={`${post.postPhoto}`} alt="poste" />
       </div>
     </div>
   );

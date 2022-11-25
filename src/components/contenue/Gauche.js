@@ -159,8 +159,6 @@ const Gauche = () => {
       .catch((err) => {
         console.log(err);
       });
-
-    console.log("deconnexion");
   };
 
   return (
@@ -172,7 +170,7 @@ const Gauche = () => {
               <img
                 src={
                   state.UTILISATEUR?.photo_profil
-                    ? `/assets/images/profil/${state.UTILISATEUR.photo_profil}`
+                    ? `${state.UTILISATEUR.photo_profil}`
                     : LOGIN
                 }
                 alt="profil utilisateur"

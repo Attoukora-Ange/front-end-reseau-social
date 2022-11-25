@@ -9,7 +9,6 @@ import ModfierIdendification from "./pages/identification/ModfierIdendification"
 import CodeIdentification from "./pages/identification/CodeIdentification";
 import axios from "axios";
 import { useEffect, useState} from "react";
-import Tchat from "./components/popup/Tchat";
 
 function App() {
   const [id, setId] = useState(null)
@@ -41,7 +40,6 @@ function App() {
       <Routes>
         <Route element={<ProtetedRoute id = {id} />}>
           <Route path="/" element={<Accueil />} />
-          <Route path="/tchat" element={<Tchat/>} />
           <Route path="/*" element={<Navigate to="/" />} />
         </Route>
         <Route element={<PublicRoute id = {id}  />}>

@@ -117,7 +117,7 @@ const Suggestion = ({suggestion}) => {
       <div className="image">
         <img src={
               suggestion?.photo_profil
-                ? `/assets/images/profil/${suggestion.photo_profil}`
+                ? `${suggestion.photo_profil}`
                 : LOGIN
             } alt="profil suggestion" />
       </div>

@@ -56,7 +56,7 @@ const Vue = () => {
   };
 
   const handleEnvoyer=  (e) => {
-    const option = {theme: 'dark' ,draggable:false}
+    const option = {theme: 'dark', draggable:false}
     e.preventDefault()
 
     const FD = new FormData()

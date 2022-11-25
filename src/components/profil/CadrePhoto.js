@@ -10,7 +10,7 @@ const CadrePhoto = () => {
         <img
           src={
             state.UTILISATEUR?.photo_couverture
-              ? `/assets/images/couverture/${state.UTILISATEUR.photo_couverture}`
+              ? `${state.UTILISATEUR.photo_couverture}`
               :COUVERTURE
           }
           alt="utilisateur couverture"
@@ -20,7 +20,7 @@ const CadrePhoto = () => {
         <img
           src={
             state.UTILISATEUR?.photo_profil
-              ? `/assets/images/profil/${state.UTILISATEUR.photo_profil}`
+              ? `${state.UTILISATEUR.photo_profil}`
               : LOGIN
           }
           alt="utilisateur profil"

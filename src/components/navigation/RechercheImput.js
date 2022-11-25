@@ -66,7 +66,7 @@ const RechercheImput = () => {
             <div key={user._id} className="cadre_recherche" onClick={()=>handleUtilisateur(user._id)}>
               <div className="image_utilisateur">
                 <img
-                  src= {user.photo_profil ? `/assets/images/profil/${user.photo_profil}` : LOGIN} 
+                  src= {user.photo_profil ? `${user.photo_profil}` : LOGIN} 
                   alt="utilisateur recherché"
                 />
               </div>

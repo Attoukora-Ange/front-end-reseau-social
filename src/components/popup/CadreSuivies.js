@@ -88,12 +88,10 @@ const CadreSuivies = ({user}) => {
       <div className="suivie_photo">
         <img  src={
               user?.photo_profil
-                ? `/assets/images/profil/${user.photo_profil}`
+                ? `${user.photo_profil}`
                 : LOGIN
             } alt="profil personne suivie" />
       </div>
-
-     
       <div className="suivie_pseudo" onClick={()=>handleSuivie(user._id)}>{user.pseudo}</div>
     </div>
     <div className="suivie_boutton">

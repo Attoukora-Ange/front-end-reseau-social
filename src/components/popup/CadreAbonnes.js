@@ -115,7 +115,7 @@ const CadreAbonnes = ({abonnes}) => {
       <div className="abonne_photo">
         <img src={
               abonnes?.photo_profil
-                ? `/assets/images/profil/${abonnes.photo_profil}`
+                ? `${abonnes.photo_profil}`
                 : LOGIN
             } alt="profl abonné" />
       </div>

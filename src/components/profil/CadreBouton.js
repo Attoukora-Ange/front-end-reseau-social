@@ -13,8 +13,6 @@ const CadreBouton = () => {
   return (
     <div className="cadre_profil_detail boutton">
       <div className="cadre_profil_detail_amis" onClick={handleModifierProfil}>Modifier mon profil</div>
-      {/* <div className="cadre_profil_detail_abonne">Suivre</div> */}
-      {/* <div className="cadre_profil_detail_suivie">Suivre</div> */}
     </div>
   );
 };

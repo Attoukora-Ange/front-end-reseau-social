@@ -1,7 +1,6 @@
 import React from "react";
 import "../../assets/css/profil.css";
 import CadreBouton from "./CadreBouton";
-// import CadreDetail from "./CadreDetail";
 import CadreIdent from "./CadreIdent";
 import CadrePhoto from "./CadrePhoto";
 const Profil = () => {
@@ -13,7 +12,6 @@ const Profil = () => {
         <div className="profil_utilisateur">
           <CadrePhoto />
           <CadreIdent />
-          {/* <CadreDetail /> */}
           <CadreBouton/>
         </div>
       </div>

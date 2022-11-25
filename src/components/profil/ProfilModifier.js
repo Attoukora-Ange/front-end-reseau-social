@@ -205,7 +205,7 @@ const ProfilModifier = () => {
                   photoCouverture
                     ? photoCouverture
                     : state.UTILISATEUR.photo_couverture
-                    ? `/assets/images/couverture/${state.UTILISATEUR.photo_couverture}`
+                    ? `${state.UTILISATEUR.photo_couverture}`
                     : COUVERTURE
                 }
                 title="Photo de couverture"
@@ -228,7 +228,7 @@ const ProfilModifier = () => {
                   photoProfil
                     ? photoProfil
                     : state.UTILISATEUR.photo_profil
-                    ? `/assets/images/profil/${state.UTILISATEUR.photo_profil}`
+                    ? `${state.UTILISATEUR.photo_profil}`
                     : LOGIN
                 }
                 title="Photo de profil"
@@ -304,9 +304,7 @@ const ProfilModifier = () => {
                       onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
-
                   <div className="champs_boutton">
-                    
                     <button className="boutton_valider">Modifier</button>
                   </div>
                 </div>

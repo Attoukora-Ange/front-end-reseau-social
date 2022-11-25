@@ -16,7 +16,7 @@ const Utilisateur = () => {
         <img
           src={
             state.UTILISATEUR?.photo_profil
-              ? `/assets/images/profil/${state.UTILISATEUR.photo_profil}`
+              ? `${state.UTILISATEUR.photo_profil}`
               : LOGIN
           }
           alt="imag utilisateur"

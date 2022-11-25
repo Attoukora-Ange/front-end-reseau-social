@@ -130,7 +130,7 @@ const CadreAmis = ({ amis }) => {
           <img
             src={
               amis?.photo_profil
-                ? `/assets/images/profil/${amis.photo_profil}`
+                ? `${amis.photo_profil}`
                 : LOGIN
             }
             alt="profil amis"

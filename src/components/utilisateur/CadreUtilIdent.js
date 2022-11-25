@@ -10,7 +10,6 @@ const CadreUtilIdent = ({user}) => {
         </div>
         <div className="pseudo_profil">
           <div className="pseudo_profil_label">Age : </div>
-          {/* <div className="pseudo_profil_age">{user.naissance} ans</div> */}
           <div className="pseudo_profil_age">{new Date(Date.now()).getFullYear() - new Date(user.naissance).getFullYear() } ans</div>
         </div>
         <div className="pseudo_profil">

@@ -47,8 +47,6 @@ const PostCommentaire = ({ post }) => {
         <ToastContainer />
       <div className="champs_commentaire">
         <textarea
-          //   name=""
-          //   id=""
           cols="30"
           rows="10"
           value={postCommentaire}

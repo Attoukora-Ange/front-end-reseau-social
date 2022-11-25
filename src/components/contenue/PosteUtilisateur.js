@@ -74,7 +74,7 @@ const PosteUtilisateur = ({ post }) => {
                   <img
                     src={
                       user?.photo_profil
-                        ? `/assets/images/profil/${user.photo_profil}`
+                        ? `${user.photo_profil}`
                         : LOGIN
                     }
                     alt="utilisateur icone"

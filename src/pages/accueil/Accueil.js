@@ -4,7 +4,6 @@ import Contenue from "../../components/Contenue";
 import Navigation from "../../components/Navigation";
 import Abonnes from "../../components/popup/Abonnes";
 import Amis from "../../components/popup/Amis";
-import Conversation from "../../components/popup/Conversation";
 import ModPasse from "../../components/popup/ModPasse";
 import Suivie from "../../components/popup/Suivies";
 import {
@@ -105,7 +104,6 @@ const Accueil = () => {
       {stateVisible.VUE_LISTE_ABONNE && <Abonnes />}
       {stateVisible.VUE_LISTE_SUIVIE && <Suivie />}
       {stateVisible.VUE_MOT_PASSE && <ModPasse />}
-      {stateVisible.VUE_CONERSATION && <Conversation socket = {socket} />}
     </div>
   );
 };

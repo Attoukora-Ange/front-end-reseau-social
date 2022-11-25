@@ -38,7 +38,7 @@ const EnLigne = () => {
         <img src="/assets/images/loginPersonne.png" alt="amis en ligne" />
       </div>
       <div className="pseudo" onClick={handleEnligneUtilisateur}>
-        Ali kouakou
+        Aucun utilisateur en ligne
       </div>
     </div>
   );

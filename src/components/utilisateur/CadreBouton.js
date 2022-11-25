@@ -203,8 +203,6 @@ const CadreBouton = ({ user }) => {
           Suivre
         </div>
       )}
-
-      {/* <div className="cadre_profil_detail_abonne">Suivre</div> */}
     </div>
   );
 };
